@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Model;
+use Illuminate\Database\Eloquent\Model;
 
 class BigUser extends Model
 {

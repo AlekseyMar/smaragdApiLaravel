@@ -19,8 +19,8 @@ use Illuminate\Http\Request;
 
 Route::prefix('/users')->group(function () {
     Route::get('/', ['uses' => 'BigUserController@get']);
-        // UserController - назварие будущего контроллера
-        // get - назварие будущего метода (получить список всех юзеров)
+        // UserController - назварие контроллера
+        // get - назварие метода (получить список всех юзеров)
     Route::get('/{user_name}', ['uses' => 'BigUserController@detail']);//(получить одного по id)
     Route::post('/', ['uses' => 'BigUserController@create']);
     Route::delete('/{user_id}', ['uses' => 'BigUserController@delete'])->where(['user_id'=>'[0-9+]']);

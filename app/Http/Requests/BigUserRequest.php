@@ -14,8 +14,8 @@ class BigUserRequest extends ApiRequest
 			//'email' => 'required|string',
 			//'phone' => 'string', не обязательное поле
 
-			'big_user_id' => 'string', //- id
-			'user_login' => 'string', //- идентификатор пользователя
+			'big_user_id' => 'required|string', //- id
+			'user_login' => 'required|string', //- идентификатор пользователя
 			'firstName' => 'string', //- имя
 			'middleName' => 'string', //- отчество
 			'lastName' => 'string', //- фамилия
